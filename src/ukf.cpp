@@ -257,7 +257,7 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
                     p_y;
   }
 
-  // calcuate mean
+  // calculate mean
   VectorXd z_pred = VectorXd(2);
   z_pred.fill(0.0);
   for(int i =0; i< 2*n_aug_ + 1; i++)
@@ -329,7 +329,7 @@ void UKF::UpdateRadar(MeasurementPackage meas_package) {
                     rho_dot;
   }
 
-  // calcuate mean
+  // calculate mean
   VectorXd z_pred = VectorXd(3);
   z_pred.fill(0.0);
   for(int i =0; i< 2*n_aug_ + 1; i++)
