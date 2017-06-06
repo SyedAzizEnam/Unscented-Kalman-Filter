@@ -71,7 +71,7 @@ UKF::UKF() {
   std_radphi_ = 0.03;
 
   // Radar measurement noise standard deviation radius change in m/s
-  std_radrd_ = 0.35;
+  std_radrd_ = 0.3;
 
   // Radar covariance
   R_radar_ = MatrixXd(3,3);
